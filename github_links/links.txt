@@ -1,7 +1,0 @@
-https://github.com/Donxcel/Python-practice/tree/main/Building_a_snake_Game_with_Turtle
-
-https://github.com/Donxcel/Python-practice/tree/main/pong_game
-
-https://github.com/Donxcel/data-science-and-machine-learning
-
-https://github.com/Donxcel/Python-practice/tree/main/password-manager
