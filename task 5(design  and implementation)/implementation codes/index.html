@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TripTrack</title>
+    <!--    googlr fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Ubuntu:wght@700&display=swap"
+          rel="stylesheet">
+    <!--    css style heet edited by suzy and diran-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--   fontawesome-->
+    <script src="https://kit.fontawesome.com/2bb1598ed3.js" crossorigin="anonymous"></script>
+    <!--    bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+<section id="title">
+    <div class="container-fluid" id="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="padding:0 0 5rem;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex" href="#"><a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot fa-beat-fade fa-2xl" style="color: #f21c1c;"></i><i class="fa-solid fa-t fa-xl"></i><i class="fa-solid fa-r"></i><i class="fa-solid fa-i"></i><i class="fa-solid fa-p"></i><i class="fa-solid fa-t fa-xl" style="color: #f21c1c;"></i><i class="fa-solid fa-r" style="color: #f21c1c;"></i><i class="fa-solid fa-i" style="color: #f21c1c;"></i><i class="fa-solid fa-c" style="color: #f21c1c;"><i class="fa-solid fa-k" style="color: #f21c1c;"></i></i></a>
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#"><u>HOME</u></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="driver.html">DRIVER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">RIDER</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-primary btn-sm signup" onclick="showLoginPopup()"><i class="fa-solid fa-user-lock" style="color: #28269c;"></i>LOGIN</i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-success btn-sm login" onclick="showSignupPopup()"><i class="fa-solid fa-user-plus"></i>SINGUP</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Title -->
+
+        <ul class="row header-row">
+            <li class="col-lg-6">
+                <div>
+                    <span><h3 class="caption-top">Life's better</h3><h3 class="caption-top2"> without a car</h3></span>
+                        
+    
+                </div>
+            </li>
+            <li class="col-lg-6">
+                <div>
+                    <img class="title-image" src="images/phones-en.png" alt="iphone-mockup">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Features -->
+<!-- -------------------------------------section 2 ------------------------------------------------------------- -->
+<section id="features">
+    <div class="container-fluid" style="padding:15% 15% 15% 15%;">
+        <div class="row">
+            <ul class="row">
+                <li class="col-lg-6 manage">
+                    <div class="qwre" style="padding-top:5%;">
+                        <h3  class="ready-set" >
+                            Ready ,Set, Go<br> in just a few quick steps </h3>
+                        <p class="features-p">no matter your destination we will help improve your time to get there </p>
+                        <h3  class="point"><i class="fa-sharp fa-solid fa-arrow-right" style="color: #1d8c20;"></i>   Get reliable rides</h3>
+                        <h3 class="point" ><i class="fa-sharp fa-solid fa-arrow-right" style="color: #1d8c20;"></i>   schedule your rides in advance </h3>
+                        <h3 class="point" ><i class="fa-sharp fa-solid fa-arrow-right" style="color: #1d8c20;"></i>  save monet and time </h3>
+
+                    </div>
+                </li>
+                <li class="col-lg-6 manage2">
+                    <div class="qwre">
+                        <img class="img-fluid section2-image" src="images/waiting-926533.jpg" alt="waiting-926533">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+
+<section id="testimonials">
+    <div class="back-image">
+        <ul class="row">
+            <li class="col-md-6">
+        <!-- nav bar and body seperation -->
+        <!--carocel images   -->
+          <div class="container-xl display-images">
+            <div class="row">
+              <div class="col-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="9500">
+                      <img src="images/rout optimisation.jpg" class=" d-block img-fluid secstion2-image" alt="image1">
+                      <div class="carousel-caption d-none d-lg-block">
+                        <h1 class="image-label">route optimisation. Get there in no time!</h1>
+                        <h5>get the fastes , safest and shortest rouad to your desired location  </h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item"  data-bs-interval="14000">
+                      <img src="images/waiting-926533.jpg" class="d-block img-fluid secstion2-image" alt="image 2">
+                      <div class="carousel-caption d-none d-lg-block">
+                        <h1 class="image-label">Avoid waiting</h1>
+                        <h5 >improve your time management and get there faster  </h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item"  data-bs-interval="16000">
+                      <img src="images/pasenger boards taxi.png" class=" d-block img-fluid secstion2-image" alt="image 3">
+                      <div class="carousel-caption d-none d-lg-block">
+                        <h1 class="image-label">boarding taxis with ease</h1>
+                        <h5>avoid longer wait hours for vehicles by joining us </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              </li>
+              <li class="col-md-6">
+                <h3 id="element2" class="explain"></h3>
+              </li>
+            </ul>
+            </div>
+        </div>
+</section>
+
+<section class="press">
+    <ul class="row">
+        <li class="col-lg-3">
+            <h3 class="estimate" >Ready to Roll?<br> <b> Get an estimate </b></h3>
+        </li>
+        <li class="col-lg-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter pick-up location" aria-label="Username" aria-describedby="basic-addon1">
+              </div>   
+        </li>
+        <li class="col-lg-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter drop-off location" aria-label="Username" aria-describedby="basic-addon1">
+              </div>   
+        </li>
+        <li class="col-lg-3">
+            <div class="input-group mb-3 bu">
+                <button class="btn btn-dark "> Get estimate</button>
+              </div>   
+        </li>
+    </ul>
+</section>
+
+
+
+<section id="features-2">
+    <div class="container-fluid" style="padding:5% 15% 11% 15%;">
+           <ul class="row">
+            <li class="col-lg-6">
+              <p style="color: rgb(210, 213, 216);">Security </p>
+                <div class="qwre">
+                    <img class="img-fluid section4-image" src="images/home_pinkpaint_hero.webp" alt="waiting-926533">
+                </div>
+            </li>
+            <li class="col-lg-6" style=" padding-left: 4%;">
+              <div class="qwre">
+                  
+                  <h3  class="safty" style="padding-top: 5%;" >
+                      Safty ,Security, first</h3>
+                  <p class="safty-explain"><b>TripTrack</b> prioritizes safety and security, providing peace of mind for users throughout their journeys. With real-time tracking and advanced security measures, it ensures a secure travel experience. Trust TripTrack for reliable and protected travels.</>
+              </div style='padding-top:3;'>
+              <div class="bu1">
+              <a href="#"><button class="btn btn-dark btn-md"> Learn More</button></a>
+            </div>
+            </li>
+               
+                
+            </ul>
+        </div>
+    </div>
+    <hr style="border-style: inset; color: rgb(208, 209, 209);">
+</section>
+<section id="features-2">
+    <div class="container-fluid" style="padding:10% 15% 15% 15%;">
+           <ul class="row">
+            <li class="col-lg-6">
+                <div class="qwre">
+                    <img class="img-fluid section4-image" src="images/happy taxi man 2.jpg" alt="waiting-926533">
+                </div>
+            </li>
+                <li class="col-lg-6" style=" padding-left: 4%;">
+                    <div class="qwre" style="padding-top: 18%;">
+                         <h3 class="ride">Let’s ride </h3>
+                        </div style='padding-top:3;'>
+                        <span style="padding: 2%;">
+                    <a href="driver.html"><button class="btn btn-dark btn-lg"> Apply to drive</button></a>
+                </span>
+                <span style="padding:2%">
+                    <a><button onclick='showSignupPopup()' class="btn btn-outline-dark btn-lg"> Signup for ride</button></a>
+                </span>
+                </div>
+            </li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section-5">
+    <div class="container-fluid align-content-center justify-content-center" style="text-align: center; margin-bottom: -5%; padding:5% 15% 5% 15%;">
+        <h3 style="font-size: 1.5rem; font-weight: 800;">TripTrack</h3>
+        <h3 style="font-size: 2.5rem;"><u>We ease Motion for!</u></h3>
+        <h3 class='p'   style="font-size:1rem;"></h3>
+        <h3 id="word-container" style="font-size: 2rem; text-align: center; color: aliceblue; padding-bottom: 5%;"></h3>
+        <img class="img-fluid" src="images/family trip.png" alt="family trip" style="border-radius: 10%;">
+    </div>
+
+</section>
+
+<!-- -----------------------------------------------login popup--------------------------------------------------------- -->
+<div id="loginPopup" class="login-popup" style="display: none;">
+    <div class="login-form">
+      <h2>Welcome Back</h2>
+    <div class="container-fluid">
+        <img class="img-fluid login-img" src="images/login.jpg">
+    </div>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+          </div>
+            <div class="form-check" style="padding-bottom: 2%;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                  i am a <b>DRIVER</b>
+                </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- -------------------------------------------------------------------signupform---------------------------------------- -->
+<div class="container-fluid">
+  <div id="signupPopup" class="signup-popup" style="display: none;">
+    <div class="signup-form">
+        <h3 style="font-size:2rem; text-align: center;"> Welcom to <b>TripTrack</b></h3>
+      <h3 style="font-size: 1.5rem;">Signup</h3>
+      <div class="container-fluid">
+        <img class="img-fluid signup-img"  style="border-radius: 5%" src="images/black woman in taxi 2.png">
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your Address">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------ Footer---------------------------------------------- -->
+
+
+  
+<footer class="footer" id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Information</h4>
+          <p>Phone: 672944309</p>
+          <p>Email: innovation.@triptrack.com</p>
+          <p>Address: molyko Street, Buea, Cameroon</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Navigation</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Driver</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Connect with Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Triptrack. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled ">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>
+    
+
