@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TripTrack</title>
+    <!--    googlr fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!--    css style heet edited by suzy and diran-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <!--   fontawesome-->
+    <script src="https://kit.fontawesome.com/2bb1598ed3.js" crossorigin="anonymous"></script>
+    <!--    bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="{% static 'scripts/scripts.js' %}"></script>
+</head>
+<body>
+
+    <section id="title" >
+        <div class="container-fluid" id="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" style="padding:0 0 5rem;">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex" href="#"><a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot fa-beat-fade fa-2xl" style="color: #f21c1c;"></i><i class="fa-solid fa-t fa-xl"></i><i class="fa-solid fa-r"></i><i class="fa-solid fa-i"></i><i class="fa-solid fa-p"></i><i class="fa-solid fa-t fa-xl" style="color: #f21c1c;"></i><i class="fa-solid fa-r" style="color: #f21c1c;"></i><i class="fa-solid fa-i" style="color: #f21c1c;"></i><i class="fa-solid fa-c" style="color: #f21c1c;"><i class="fa-solid fa-k" style="color: #f21c1c;"></i></i></a>
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active header-text" aria-current="page" href="#"><u>HOME</u></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active header-text" href="driver.html">DRIVER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a  href="main.html" class="nav-link active header-text">RIDER</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-primary btn-sm signup header-text" onclick="showLoginPopup()"><i class="fa-solid fa-user-lock" style="color: #28269c;"></i>LOGIN</i></button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-success btn-sm login header-text" onclick="showSignupPopup()"><i class="fa-solid fa-user-plus"></i>SINGUP</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- ----------------------------------------------mobile header----------------------- -->
+            <div class=" container-fluid " id="mobile-header">
+              <nav id="sidebar">
+              <div class="sidebar-header" >
+                <a class="navbar-brand d-flex" href="#"><a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot fa-beat-fade fa-2xl" style="color: #f21c1c;"></i><i class="fa-solid fa-t fa-lg" style="color: #00183b;"></i><i class="fa-solid fa-r" style="color: #00183b;"></i><i class="fa-solid fa-i" style="color: #00183b;"></i><i class="fa-solid fa-p" style="color: #00183b;"></i><i class="fa-solid fa-t fa-xl" style="color: #f21c1c;"></i><i class="fa-solid fa-r" style="color: #f21c1c;"></i><i class="fa-solid fa-i" style="color: #f21c1c;"></i><i class="fa-solid fa-c" style="color: #f21c1c;"><i class="fa-solid fa-k" style="color: #f21c1c;"></i></i></a>
+              </div>
+              <ul class="list-unstyled components">
+              <li class="nav-item con">
+                  <button type="button" class="btn btn-outline-primary btn-sm signup header-text-mobile" >MAP</button>
+              </li>
+              <li class="nav-item con">
+                  <button type="button" class="btn btn-outline-success btn-sm login header-text-mobile" >HOME</button>
+              </li>
+              
+              </ul>
+             
+              </nav>
+              <div id="content">
+                <div class="sidebaric" style="padding-top: -5%; align-items: start;">
+                  <span><p><a class="navbar-brand d-flex" href="#"><a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot fa-beat-fade fa-2xl" style="color: #f21c1c;"></i><i class="fa-solid fa-t fa-lg" style="color: #00183b;"></i><i class="fa-solid fa-r" style="color: #00183b;"></i><i class="fa-solid fa-i" style="color: #00183b;"></i><i class="fa-solid fa-p" style="color: #00183b;"></i><i class="fa-solid fa-t fa-xl" style="color: #f21c1c;"></i><i class="fa-solid fa-r" style="color: #f21c1c;"></i><i class="fa-solid fa-i" style="color: #f21c1c;"></i><i class="fa-solid fa-c" style="color: #f21c1c;"><i class="fa-solid fa-k" style="color: #f21c1c;"></i></i></a></p>
+                  </span>
+                </div>
+              <div type="button" id="sidebarCollapse">
+                  <i class=""></i>
+                  
+                  <span><i class="fa-solid fa-bars fa-2xl" style="color: #040c1b;"></i></span>
+              </div>
+              
+              </div>
+              
+          </div>
+           
+        </div>
+    
+        </div>
+    </section>
+    
+                    <section id="question">
+                    <div class="question">
+                      <div class="question-ask">
+                        <div class="question-header">
+                          <h2 style="color: #2BC875; font-size: 50px; " class="d-flex justify-content-center">SETTING</h2>
+                        </div>
+                       <div class="frequent" style="margin-top: 30px;">
+                         <div class="frequently">
+                             <div class="card frequently-ask border-0">
+                              <button class="card-header collapsed card-link border-0 d-flex"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne" style="background-color: #ffff; justify-content: space-between;">
+           
+                                  <b class="header-title float-left border-0">
+                                    Change language ?
+                                  </b>
+                                  <i class="fas fa-plus float-right "></i>
+                              </button>
+                               
+                              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <div class="card card-body border-0">
+                                 
+                                </div>
+                              </div>
+                          </div>
+                             <hr>
+                           
+                         </div>
+                         <div class="card frequently-ask border-0">
+                          <button class="card-header collapsed card-link border-0 d-flex"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo" style="background-color: #ffff; justify-content: space-between;">
+       
+                              <b class="header-title float-left border-0">
+                                Change password?
+                              </b>
+                              <i class="fas fa-plus float-right "></i>
+                          </button>
+                           
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card card-body border-0">
+                                <ul class="row">
+                        
+                                    <li class="col-lg-3">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Enter old password" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>   
+                                    </li>
+                        
+                                    <li class="col-lg-3">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Enter new password" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>   
+                                    </li>
+                        
+                                    <li class="col-lg-3">
+                                        <div class="input-group mb-3 bu">
+                                            <button class="btn btn-dark "> Update</button>
+                                        </div>   
+                                    </li>
+                                </ul> 
+                            </div>
+                          </div>
+                      </div>
+                         <hr>
+                       
+                     </div>
+                     <div class="card frequently-ask border-0">
+                      <button class="card-header collapsed card-link border-0 d-flex"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" style="background-color: #ffff; justify-content: space-between;">
+    
+                          <b class="header-title float-left border-0">
+                            Update home location 
+                          </b>
+                          <i class="fas fa-plus float-right "></i>
+                      </button>
+                       
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card card-body border-0">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque magna diam, feugiat sed nunc quis, imperdiet bibendum mauris.
+                          </div>
+                      </div>
+                  </div>
+                     <hr>
+                   
+                 </div>
+                 <div class="card frequently-ask border-0">
+                  <button class="card-header collapsed card-link border-0 d-flex"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" style="background-color: #ffff; justify-content: space-between;">
+    
+                      
+                      <i class="fas fa-plus float-right "></i>
+                  </button>
+                   
+                  <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card card-body border-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque magna diam, feugiat sed nunc quis, imperdiet bibendum mauris.
+                      </div>
+                  </div>
+              </div>
+               
+             </div>
+    
+                       </div>
+                      </div>
+                    </div>
+                    </section>
+    
+    
+     
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Contact Information</h4>
+              <p>Phone: 672944309</p>
+              <p>Email: innovation.@triptrack.com</p>
+              <p>Address: molyko Street, Buea, Cameroon</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Navigation</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Driver</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Connect with Us</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 Triptrack. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled ">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <style>
+        #question{
+          padding: 3% 5%;
+        }
+      </style>
+
+      <script>
+        $('.card-header').click(function(){
+          $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+        });
+      </script>
+      <script>
+        $(document).ready(function() {
+            var screenWidth = $(window).width();
+            var sidebar = $('#sidebar');
+            var content = $('#content');
+        
+            if (screenWidth >= 768) {
+                sidebar.removeClass('active'); // Hide the sidebar on desktop screens
+                content.removeClass('active');
+            }
+        
+            $(window).scroll(function() {
+                if (screenWidth < 768) {
+                    sidebar.removeClass('active');
+                    content.removeClass('active');
+                }
+            });
+        
+            $('#sidebarCollapse').on('click', function() {
+                sidebar.toggleClass('active');
+                content.toggleClass('active');
+            });
+        });
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% extends 'main.html' %} 
+{% block content %} {% load static %}
+
+<section class="container-fluid">
+    <div class="container-fluid driver-join" style="border-style:inset;">
+        <h3 class="driver-head">Driver Registration</h3>
+        
+        <form  action="{% url 'driversignup' pk %}" method="POST", enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="license">Driver's License:</label>
+                <input type="text" id="license" name="license" placeholder="Enter your driver's license number">
+            </div>
+            
+            <div class="form-group">
+                <label for="image">License Document:</label>
+                <input type="file" id="image" name="image">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+        
+    </div>
+</section>
+
+<section style="padding-bottom: 5%;">
+    <div class="container-fluid" style="align-items: center; padding:15 10 15 0 ;">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <h3 class="test"> What Other Drivers say </h3>
+            </div>
+            <div class="container-fluid" style="align-items: center; padding: 0% 15% 0% 20%;">
+                <div class="row">
+
+                    <div class="col-md-4 testimony">
+                        <img class=" img-thumbnail" id="taxi-driver" src="{% static  'images/happy man1.webp' %}" alt="happy taxi man">
+                        <P style="border-bottom:inset;">I love how TripTrack enhances passenger safety.r I feel confident knowing that only genuine passengers are using the service. It prioritizes the well-being of both drivers and passengers.</P>
+                    </div>
+
+                    <div class="col-md-4 testimony">
+                        <img class=" img-thumbnail" id="taxi-driver" src="{% static 'images/happy man 2.jpg' %}" alt="happy taxi man">
+                        <p style="border-bottom:inset;">Its advanced features, such as real-time traffic updates and intelligent route suggestions, ensure that I can navigate smoothly and reach passengers without any delays</p>
+                    </div>
+
+                    <div class="col-md-4 testimony">
+                        <img class=" img-thumbnail" id="taxi-driver" src="{% static 'images/happy man 3.jpg'%}" alt="happy taxi man">
+                        <p style="border-bottom:inset;" class="p">As a driver using TripTrack, I am amazed by how efficiently it optimizes routes for passengers. It saves me valuable time and allows me to provide a seamless transportation experience."</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid align-content-center justify-content-center" style="text-align: center; margin-bottom: -5%; padding:5% 15% 5% 15%;">
+    <h3 style="font-size: 1.5rem; font-weight: 800;">TripTrack</h3>
+    <h3 class="close"><u>Join us make movement easy for the world</u></h3>
+</div>
+
+{% endblock %}
